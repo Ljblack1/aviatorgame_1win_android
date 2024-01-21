@@ -195,7 +195,7 @@ p {
   /* position: -webkit-sticky; */
   position: fixed;
   top: 0;
-  margin-top: 5rem;
+  margin-top: 4.5rem;
   width: 100%;
   height: 2.55rem;
   background-color: #1b1c1d;
@@ -360,7 +360,7 @@ p {
   grid-template-columns: 80% 20%;
   align-items: start;
   background: linear-gradient(270deg, rgb(14,14,14), 90%, rgb(14,14,14));
-  margin-top: 5rem;
+  margin-top: 4.5rem; 
 }
 
 .chat_container {
@@ -877,7 +877,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 5rem;
+  height: 4.5rem;
   background-color: #28a909;
   z-index: 500;
 }
