@@ -1,0 +1,1000 @@
+/*
+=============== 
+Fonts
+===============
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: #49a6e9;
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-secondary: hsla(182, 63%, 54%);
+  --clr-black: #222;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-secondary);
+  background: #090f1e;
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  overflow: hidden;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+.container {
+  width: 100%;
+  /* height: 100vh; */
+}
+
+/* section */
+.section {
+  padding-bottom: 5rem;
+}
+
+.section-center {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1170px;
+  z-index: 100;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
+
+/* induvidual styles */
+.header_one {
+  width: 100%;
+  height: 6vh;
+  background: linear-gradient(270deg,#21222a,#18191e);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.prev-page-btn {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+  margin: 0 2rem;
+  font-size: 200;
+  transform: scaleY(1.5) scaleX(1.5);
+}
+
+/* header two styles */
+.header_two {
+  /* position: -webkit-sticky; */
+  position: fixed;
+  top: 0;
+  margin-top: 5rem;
+  width: 100%;
+  height: 2.55rem;
+  background-color: #1b1c1d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 0 .35rem;
+  z-index: 3000;
+}
+
+.header_left{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo {
+  width: 7rem;
+  height: 3rem;
+  background: url("https://aviator-next.spribegaming.com/aviator-logo.cafbd29233306bf7.svg") no-repeat center center/contain;
+}
+
+/* .logo::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  z-index: 1;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 125px;
+  height: 25px;
+  background-image: url(https://aviator-next.spribegaming.com/top-bar-snow.a903d1c7f8b6d0b8.png);
+  background-position: left bottom;
+} */
+
+.header_two_right {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.amount {
+  display: flex;
+  align-items: end;
+  gap: 5px;
+}
+
+.amount p {
+  margin: 0;
+}
+
+.balance {
+  font-size: 1rem;
+  color: #28a909;
+  font-weight: 700;
+}
+
+.currency {
+  font-size: .75rem;
+}
+
+.change_balance_container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 50vh;
+  background-color: #fff;
+  z-index: 1000;
+  border-radius: 4rem;
+  box-shadow: inset 5px 5px 5px #c0c0c0;
+  flex-direction: column;
+  gap: 1rem;
+  display: none;
+}
+
+.change_balance_input_field {
+  width: 80%;
+  padding: .5rem;
+  font-size: 1rem;
+}
+
+.add_balance_btn {
+  padding: .5rem 2rem;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #141516;
+  border: 1px solid #141516;
+  border-radius: 2rem;
+}
+
+.underline {
+  height: 1.55rem;
+  width: 2px;
+  background-color: rgba(153, 154, 158, .2);
+}
+
+.menu_btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  color: #9b9c9e;
+}
+
+.chat_btn {
+  border: none;
+  width: 20px;
+  height: 20px;
+  background: url(https://aviator-next.spribegaming.com/chat.b016cf6877c43f2e.svg) no-repeat center center;
+  display: none;
+}
+
+.how_to_play {
+  padding: 5px 5px;
+  color: rgba(94, 56, 23, .85);
+  display: flex;
+  align-items: center;
+  background-color: #e69308;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  gap: .3rem;
+  filter: blur(.5px);
+  cursor: pointer;
+}
+
+.how_to_play_small {
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: url(https://aviator-next.spribegaming.com/question-gray.10476c54b3bdaed7.svg) no-repeat center center;
+  display: none;
+}
+
+.how_to_play .mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  width: .75rem;
+  height: .75rem;
+  background-color: transparent;
+  border: 1px solid #5f3816;
+  color: #5f3816;
+  padding: .55rem;
+  border-radius: 50%;
+}
+
+/* main section style */
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  align-items: start;
+  background: linear-gradient(270deg, rgb(14,14,14), 90%, rgb(14,14,14));
+  margin-top: 5rem;
+}
+
+.chat_container {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+}
+
+.chat_container img {
+  width: 100%;
+  height: 100%;
+}
+
+/* main section left styles */
+.main_section {
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  background-color: transparent;
+  padding: .5rem;
+  margin-top: 2.55rem;
+}
+
+.placed_bets {
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.placed_bets img {
+  width: 100%;
+  height: 100%;
+}
+
+.betting_space_container {
+  display: grid;
+  grid-template-rows: 4% 62% 34%;
+  margin-left: .5rem;
+  /* background-color: red; */
+}
+
+.game_history {
+  width: 100%;
+  height: 100%;
+  background-color: #28a909;
+  object-fit: cover;
+}
+
+.game_history img {
+  width: 100%;
+  height: 100%;
+}
+
+.game_play_stage {
+  width: 100%;
+  height: 100%;
+}
+
+/* .game_play_stage img {
+  width: 100%;
+  height: 100%;
+} */
+
+.play_ground_video {
+  width: 100%;
+  height: 100%;
+  transform: scaleX(1.02);
+  padding-right: .35rem;
+}
+
+.game_handles {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
+  gap: .5rem;
+  background-color: transparent;
+  /* padding: .5rem; */
+  align-items: start;
+  margin-top: .5rem;
+  justify-content: center;
+}
+
+/* game handles */
+.handles,
+.handles_two {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #1b1c1d;
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+.hide_handle_two {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background: url(https://aviator-next.spribegaming.com/remove.3d798769e16d6b60.svg) no-repeat center center;
+  z-index: 2;
+}
+
+/* .handles::before,
+.handles_two::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  z-index: 1;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 20px;
+  background-image: url(https://aviator-next.spribegaming.com/bet-control-snow-left.5a60ba1a481f48c2.png);
+  background-position: left top;
+} */
+
+/* .handles::after,
+.handles_two::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -4px;
+  z-index: 1;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 120px;
+  height: 30px;
+  background-image: url(https://aviator-next.spribegaming.com/bet-control-snow-right.f5fade2b9e720254.png);
+  background-position: right top;
+} */
+
+.bet_type_btn,
+.bet_type_btn_two {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  background-color: #141516;
+  border: 1px solid #141516;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
+.bet,
+.auto {
+  width: 100%;
+  height: 100%;
+  border-radius: 3rem;
+  padding: .2rem;
+  color: #9ea0a3;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.bet_two,
+.auto_two {
+  width: 100%;
+  height: 100%;
+  border-radius: 3rem;
+  padding: .2rem;
+  color: #9ea0a3;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.bet_type_btn .active,
+.bet_type_btn_two .active {
+  background-color: rgb(0, 255, 128);
+  color: rgba(255, 255, 255, .7);
+  background-color: rgba(158, 160, 163, .15);
+  /* background-image: url(https://aviator-next.spribegaming.com/bet-slider-btn-bg-left.b6afacf42d2ad1f8.svg), url(https://aviator-next.spribegaming.com/bet-slider-btn-bg-right.4d7f6567f3df0412.svg);
+  background-position: left bottom,right bottom;
+  background-size: contain;
+  background-repeat: no-repeat; */
+}
+
+.place_bet_handle,
+.place_bet_handle_two {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  width: 100%;
+  gap: .5rem;
+}
+
+.bet_amout,
+.bet_amout_two {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.place_bet_btn,
+.place_bet_btn_two {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: solid 1px #b2f2a3;
+  box-shadow: inset 0 1px 1px #ffffff80;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,.5);
+  border-radius: 22px;
+  cursor: pointer;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.btn_success,
+.btn_success_two {
+  background-color: #28a909;
+  /* background-image: url(https://aviator-next.spribegaming.com/snow-btn-bet.88a73d3533c84a88.svg), url(https://aviator-next.spribegaming.com/tree-left-btn-bet.87c54c1f4d86ca02.svg), url(https://aviator-next.spribegaming.com/tree-right-btn-bet.6116fecd1402931a.svg);
+  background-position: center top,left bottom,right bottom;
+  background-size: contain,auto,auto;
+  background-repeat: no-repeat; */
+}
+
+.cancel_btn_container,
+.cancel_btn_container_two {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  color: #fff;
+  display: none;
+}
+
+.waiting,
+.waiting_two {
+  font-size: 1rem;
+}
+
+.btn_progress,
+.btn_progress_two {
+  border: solid 1px #ffbd71;
+  background-color: #d07206;
+  box-shadow: inset 0 1px 1px #ffffff80;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,.5);
+  display: none;
+  /* background-image: url(https://aviator-next.spribegaming.com/snow-btn-cashout.85f10c61cdca9da7.svg), url(https://aviator-next.spribegaming.com/tree-left-btn-cashout.a3232c62e7ac8aec.svg), url(https://aviator-next.spribegaming.com/tree-right-btn-cashout.3ba8c0b6cd2211d5.svg);
+  background-position: center top,left bottom,right bottom;
+  background-size: contain,auto,auto;
+  background-repeat: no-repeat; */
+}
+
+.place_bet_btn_currency,
+.place_bet_btn_currency_two {
+  font-size: 16px;
+}
+
+.btn_danger,
+.btn_danger_two {
+  display: flex;
+  height: 100%;
+  border: solid 1px #ff7171;
+  background-color: #cb011a;
+  box-shadow: inset 0 1px 1px #ffffff80;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,.5);
+  /* background-image: url(https://aviator-next.spribegaming.com/snow-btn-cancel.a2edb807a0fa65a2.svg), url(https://aviator-next.spribegaming.com/tree-left-btn-cancel.f91a0356b51cadea.svg), url(https://aviator-next.spribegaming.com/tree-right-btn-cancel.335b235db5760704.svg);
+  background-position: center top,left bottom,right bottom;
+  background-size: contain,auto,auto;
+  background-repeat: no-repeat; */
+}
+
+.handle_1,
+.handle_1_two {
+  border: 1px solid #cb011a;
+  transition: all .3s ease;
+}
+
+.increase_decrease_amount,
+.increase_decrease_amount_two {
+  width: 100%;
+  display: flex;
+  background-color: #000000b3;
+  align-items: center;
+  justify-content: space-between;
+  padding: .35rem .5rem;
+  border-radius: 2rem;
+}
+
+.decrease, 
+.increase,
+.decrease_two, 
+.increase_two {
+  width: 1rem;
+  height: 1rem;
+  background-color: transparent;
+  border: 1px solid #a7a7a7b3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a7a7a7b3;
+  border-radius: 50%;
+  font-size: .55rem;
+  font-weight: 700;
+  padding: 2px 4px 0;
+  aspect-ratio: 1rem / 1rem;
+  cursor: pointer;
+}
+
+.stake_amount,
+.stake_amount_two {
+  background-color: transparent;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 700;
+  width: 90%;
+  border: none;
+  outline: none;
+}
+
+.choose_amount,
+.choose_amount_two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: #9ea0a3;
+  width: 100%;
+  /* gap: .5rem; */
+}
+
+.selected_amount,
+.selected_amount_two {
+  font-size: 14px;
+  width: 64px;
+  height: 18px;
+  margin-top: 4px;
+  line-height: 1;
+  padding: 0;
+  background: #141516;
+  border: none;
+  color: #ffffff80;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.cashout_alert_container {
+  position: fixed;
+  top: 2rem;
+  left: 0;
+  width: 100%;
+  height: 6rem;
+  background-color: transparent;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.cashout_alert,
+.cashout_alert_two {
+  width: 70%;
+  height: 3.5rem;
+  background-color: #1e3e0d;
+  margin: auto;
+  border-radius: 2.25rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: solid 1px #40841b;
+  box-shadow: inset 0 1px 1px #ffffff80;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,.5);
+  transform: translateY(130%);
+  opacity: 0;
+  transition: all .4s linear;
+}
+
+.show_alert {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.hide_alert {
+  transform: translateY(-130%);
+  opacity: 0;
+}
+
+.show_alert_two {
+  transform: translateY(-30%);
+  opacity: 1;
+}
+
+.hide_alert_two {
+  transform: translateY(-130%);
+  opacity: 0;
+}
+
+.alert_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0,0,0,.5);
+  margin-left: .5rem;
+}
+
+.alert_cashout_total {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #4eb919;
+  width: 100%;
+  height: 60%;
+  padding: 0 2rem;
+  height: 80%;
+  color: #fff;
+  border-radius: 3rem;
+}
+
+.alert_star {
+  position: absolute;
+  color: #4eb919;
+}
+
+.star_top_left,
+.star_top_right {
+  top: 2.5px;
+  font-size: 1.1rem;
+}
+
+.star_buttom_left,
+.star_buttom_right {
+  bottom: 2.5px;
+}
+
+.star_top_left {
+  left: 10px;
+}
+
+.star_top_right {
+  right: 10px;
+}
+
+.star_buttom_left {
+  left: 15px;
+}
+
+.star_buttom_right {
+  right: 15px;
+}
+
+
+.alert_right{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.close_alert {
+  background-color: transparent;
+  color: #ffffff80;
+  font-weight: 700;
+  border: none;
+  font-size: 1.25rem;
+}
+
+.alert_msg {
+  font-size: .75rem;
+  transform: translateY(3px);
+  color: rgba(255, 255, 255, .5);
+}
+
+.alert_odds,
+.alert_odds_two {
+  font-size: 1.35rem;
+  transform: translateY(-3px);
+}
+
+.alert_withdraw,
+.alert_withdraw_two {
+  font-size: 1.25rem;
+  font-weight: 600;
+  transform: translateY(-3px);
+}
+
+.alert_wins {
+  font-size: .75rem;
+  font-weight: 600;
+  transform: translateY(3px);
+}
+
+.web_url {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: #28a909;
+  z-index: 500;
+}
+
+.web_url img {
+  height: 100%;
+}
+
+
+@media screen and (max-width: 500px) {
+  .chat_container {
+    display: none;
+  }
+
+  .game_play_stage {
+    margin-bottom: .25rem;
+  }
+
+  .game_history {
+    display: none;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .main_section {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+
+  .betting_space_container {
+    margin-left: 0;
+  }
+
+  body {
+    overflow: scroll;
+  }
+
+  .placed_bets {
+    overflow: scroll;
+    margin-top: 1rem;
+  }
+
+  .betting_space_container {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .game_handles {
+    flex-direction: column;
+    transform: translateY(-.25rem);
+    gap: .25rem;
+  }
+
+  .header_left {
+    width: 100%;
+    gap: .5rem;
+  }
+
+  .handles,
+  .handles_two {
+    padding: 1rem;
+  }
+
+  /* .header_two_right {
+    gap: 0;
+  } */
+
+  .logo {
+    width: 5rem;
+  }
+
+  .how_to_play {
+    display: none;
+  }
+
+  .how_to_play_small {
+    display: block;
+  }
+
+  .chat_btn {
+    display: inline-block;
+  }
+
+  .bet_type_btn,
+  .bet_type_btn_two {
+    width: 50%;
+  }
+
+  .place_bet_handle,
+  .place_bet_handle_two {
+    grid-template-columns: 1fr 1.75fr;
+  }
+  
+  .header_two {
+    padding: 0 .5rem;
+  }
+
+  .bet,
+  .auto,
+  .bet_two,
+  .auto_two {
+    padding: .3rem;
+  }
+
+  .game_handles {
+    margin-top: 0;
+  }
+
+  .decrease, 
+  .increase,
+  .decrease_two, 
+  .increase_two {
+    padding: 0 4px;
+  }
+}
