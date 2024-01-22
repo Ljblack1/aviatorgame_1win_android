@@ -729,7 +729,7 @@ p {
   width: 100%;
   height: 6rem;
   background-color: transparent;
-  z-index: 100;
+  z-index: 4000;
   display: flex;
   flex-direction: column;
   gap: 5rem;
