@@ -74,7 +74,7 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: #100d11;
+  background: #000000;
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
