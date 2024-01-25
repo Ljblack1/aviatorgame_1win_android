@@ -382,66 +382,95 @@ function countCashoutTwo() {
     console.log("Tymer");
   }
   if (counterTwo > 7) {
-    counterTwo += 0.015;
+    counterTwo += 0.005;
     setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
   if (counterTwo > 8) {
-    counterTwo += 0.05;
+    counterTwo += 0.01;
     setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
   if (counterTwo > 9) {
-    counterTwo += 0.5;
+    counterTwo += 0.01;
     setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
   if (counterTwo > 10) {
-    counterTwo += 1;
+    counterTwo += 0.01;
     setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
   if (counterTwo > 11) {
-    counterTwo += 1;
+    counterTwo += 0.01;
     setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
   if (counterTwo > 12) {
-    counterTwo += 1;
+    counterTwo += 0.01;
     setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
   if (counterTwo > 13) {
-    counterTwo += 1;
+    counterTwo += 0.01;
     setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
   if (counterTwo > 14) {
-    counterTwo += 1;
+    counterTwo += 0.01;
     setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
   if (counterTwo > 15) {
-    counterTwo += 1;
+    counterTwo += 0.01;
     setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
-  if (counterTwo > 11) {
-    counterTwo += 0.05;
+  if (counterTwo > 16) {
+    counterTwo += 0.01;
     setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
-  if (counterTwo > 11) {
-    counterTwo += 0.05;
+  if (counterTwo > 17) {
+    counterTwo += 0.01;
     setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
-  if (counterTwo > 11) {
-    counterTwo += 0.05;
+  if (counterTwo > 18) {
+    counterTwo += 0.01;
     setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
-
+  if (counterTwo > 27) {
+    counterTwo += 0.015;
+    setCashout(counterTwo);
+    console.log("Tymer");
+  }
+  if (counterTwo > 28) {
+    counterTwo += 0.015;
+    setCashoutTwo(counterTwo);
+    console.log("Tymer");
+  }
+  if (counterTwo > 29) {
+    counterTwo += 0.015;
+    setCashoutTwo(counterTwo);
+    console.log("Tymer");
+  }
+  if (counterTwo > 30) {
+    counterTwo += 0.02;
+    setCashoutTwo(counterTwo);
+    console.log("Tymer");
+  }
+  if (counterTwo > 31) {
+    counterTwo += 0.02;
+    setCashoutTwo(counterTwo);
+    console.log("Tymer");
+  }
+  if (counterTwo > 32) {
+    counterTwo += 0.02;
+    setCashoutTwo(counterTwo);
+    console.log("Tymer");
+  }
 }
 
 function setCashoutTwo(counterTwo) {
