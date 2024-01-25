@@ -381,7 +381,7 @@ p {
   height: 90vh;
   display: grid;
   grid-template-columns: 35% 65%;
-  background-color: #100d11;
+  background-color: black;
   padding: .5rem;
   margin-top: 2.55rem;
 }
