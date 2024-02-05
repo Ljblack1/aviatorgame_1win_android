@@ -94,7 +94,7 @@ btn.addEventListener('click', () => {
         displayAlert(cashout);
         // setBackToDefault();
       })
-    }, 1500)
+    }, 3500)
 
   }, 3000)
 })
@@ -130,15 +130,12 @@ btnTwo.addEventListener('click', () => {
         displayAlertTwo(cashout);
         // setBackToDefault();
       })
-    }, 1500)
+    }, 3500)
 
   }, 2500)
 })
 // first handle code ends here
 // =======================================================================================
-
-
-
 
 
 successBtnAmount.textContent = stakeAmount.value;

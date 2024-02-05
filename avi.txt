@@ -1,0 +1,55 @@
+
+element.style {
+}
+.align-items-center {
+    align-items: center!important;
+}
+.justify-content-center {
+    justify-content: center!important;
+}
+.flex-column {
+    flex-direction: column!important;
+}
+.d-flex {
+    display: flex!important;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+<style>
+.controls[_ngcontent-nga-c85] .first-row[_ngcontent-nga-c85] .buttons-block[_ngcontent-nga-c85] button[_ngcontent-nga-c85] {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.btn.btn-warning {
+    border: solid 1px #ffbd71;
+    background-color: #d07206;
+    box-shadow: inset 0 1px 1px #ffffff80;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5)
+
+
+
+
+    background-image: url(https://aviator-next.spribegaming.com/snow-btn-bet.88a73d3533c84a88.svg), url(https://aviator-next.spribegaming.com/tree-left-btn-bet.87c54c1f4d86ca02.svg), url(https://aviator-next.spribegaming.com/tree-right-btn-bet.6116fecd1402931a.svg);
+  background-position: center top,left bottom,right bottom;
+  background-size: contain,auto,auto;
+  background-repeat: no-repeat;
+
+
+  -img-snow: url(snow-btn-cancel.a2edb807a0fa65a2.svg);
+    --img-tree-left: url(tree-left-btn-cancel.f91a0356b51cadea.svg);
+    --img-tree-right: url(tree-right-btn-cancel.335b235db5760704.svg);
+
+    background-image: var(--img-snow),var(--img-tree-left),var(--img-tree-right);
+    background-position: center top,left bottom,right bottom;
+    background-size: contain,auto,auto;
+    background-repeat: no-repeat;
