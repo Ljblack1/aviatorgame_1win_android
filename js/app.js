@@ -33,9 +33,6 @@ const balanceContainer = document.querySelector('.change_balance_container');
 const balanceInputField = document.querySelector('.change_balance_input_field');
 const balanceBtn = document.querySelector('.add_balance_btn');
 
-const totalUser= document.querySelector('.total_users');
-console.log(totalUser.innerHTML);
-
 const amount = document.querySelector('.amount');
 
 
@@ -61,7 +58,7 @@ balanceBtn.addEventListener("click", () => {
   balanceContainer.style.display = "none";
 })
 
-let mainBalance = 95878.91;
+let mainBalance = 41732.55;
 
 balance.textContent = mainBalance;
 
@@ -77,9 +74,6 @@ btn.addEventListener('click', () => {
     waiting.style.display = "none";
     mainBalance -= Number(stakeAmount.value);
     balance.textContent = mainBalance;
-    const users = Math.floor(Math.random() * (6000 - 4000 + 1)) + 4000;
-
-    totalUser.innerHTML = users;
     
     setTimeout(() => {
       cancelContainer.style.display = "none";
@@ -100,7 +94,7 @@ btn.addEventListener('click', () => {
         displayAlert(cashout);
         // setBackToDefault();
       })
-    }, 1500)
+    }, 6500)
 
   }, 3000)
 })
@@ -136,7 +130,7 @@ btnTwo.addEventListener('click', () => {
         displayAlertTwo(cashout);
         // setBackToDefault();
       })
-    }, 1500)
+    }, 6500)
 
   }, 2500)
 })

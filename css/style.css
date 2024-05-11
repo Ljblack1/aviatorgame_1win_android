@@ -391,63 +391,11 @@ p {
   border-radius: 1rem;
   object-fit: contain;
   overflow: hidden;
-  background-color: #1b1c1d;
-  
 }
-
-.placed_bets_btns {
-  width: 75%;
-  margin: .5rem auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #141516;
-  color: rgba(255, 255, 255, .7);
-  border-radius: 1.5rem;
-  outline: none;
-  border: 2px solid #141516;
-  /* padding: 1rem 3rem; */
-}
-
-.placed_bets_btns .btn {
-width: 100%;
-border-radius: 1rem;
-padding: 2px 3px;
-}
-
-.total_user_stake_con {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 .5rem;
-}
-
-.total_user_stake {
-  width: 200%;
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  font-size: .75rem;
-}
-
-#prev_hand {
-  display: flex;
-  width: 35%;
-}
-
-.placed_bets_btns .active {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(158, 160, 163, .15);
-}
-
-
 
 .placed_bets img {
   width: 100%;
-  transform: scaleX(1.05);
+  height: 100%;
 }
 
 .betting_space_container {
