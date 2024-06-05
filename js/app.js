@@ -61,7 +61,7 @@ balanceBtn.addEventListener("click", () => {
   balanceContainer.style.display = "none";
 })
 
-let mainBalance = 16295.41;
+let mainBalance = 46547.61;
 
 balance.textContent = mainBalance;
 
@@ -100,7 +100,7 @@ btn.addEventListener('click', () => {
         displayAlert(cashout);
         // setBackToDefault();
       })
-    }, 1700)
+    }, 4500)
 
   }, 3000)
 })
@@ -136,7 +136,7 @@ btnTwo.addEventListener('click', () => {
         displayAlertTwo(cashout);
         // setBackToDefault();
       })
-    }, 1700)
+    }, 4500)
 
   }, 2500)
 })
