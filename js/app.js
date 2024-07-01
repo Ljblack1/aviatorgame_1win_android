@@ -40,6 +40,7 @@ const amount = document.querySelector('.amount');
 
 
 const balance = document.querySelector('.balance');
+const currencys = document.querySelectorAll("#currency");
 
 // const video = document.querySelector('.play_ground_video');
 // console.log(video);
@@ -53,6 +54,14 @@ balance.addEventListener("click", () => {
   balanceContainer.style.display = "flex";
 })
 
+const mainCurrency = "NGN";
+
+document.addEventListener("DOMContentLoaded", () => {
+  currencys.forEach((currency) => {
+    currency.textContent = mainCurrency;
+  });
+});
+
 balanceBtn.addEventListener("click", () => {
   const balanceValue = Number(balanceInputField.value);
   mainBalance = balanceValue;
@@ -61,7 +70,7 @@ balanceBtn.addEventListener("click", () => {
   balanceContainer.style.display = "none";
 })
 
-let mainBalance = 23069.61;
+let mainBalance = 2069.61;
 
 balance.textContent = mainBalance;
 
@@ -75,7 +84,8 @@ btn.addEventListener('click', () => {
   
   setTimeout(() => {
     waiting.style.display = "none";
-    mainBalance -= Number(stakeAmount.value);
+    mainBalance -= Math.round(Number(stakeAmount.value));
+    mainBalance = mainBalance.toFixed(2);
     balance.textContent = mainBalance;
     const users = Math.floor(Math.random() * (6000 - 4000 + 1)) + 4000;
 
@@ -93,8 +103,9 @@ btn.addEventListener('click', () => {
         btn.style.display = "flex";
         btnProgress.style.display = "none";
         const cashout = btnAmount.textContent;
-        const newBalance = mainBalance + Number(cashout);
+        const newBalance = Number(mainBalance) + Number(cashout);
         balance.textContent = newBalance.toFixed(2);
+        console.log(newBalance);
         clearInterval(cashoutTime);
         handleOne.classList.remove("handle_1");
         displayAlert(cashout);
@@ -115,6 +126,7 @@ btnTwo.addEventListener('click', () => {
   setTimeout(() => {
     waitingTwo.style.display = "none";
     mainBalance -= Number(stakeAmountTwo.value);
+    mainBalance = mainBalance.toFixed(2);
     balance.textContent = mainBalance;
 
     setTimeout(() => {
@@ -129,7 +141,7 @@ btnTwo.addEventListener('click', () => {
         btnTwo.style.display = "flex";
         btnProgressTwo.style.display = "none";
         const cashout = btnAmountTwo.textContent;
-        const newBalance = mainBalance + Number(cashout);
+        const newBalance = Numaber(mainBalance) + Number(cashout);
         balance.textContent = newBalance;
         clearInterval(cashoutTime);
         handleOneTwo.classList.remove("handle_1_two");
