@@ -70,7 +70,7 @@ balanceBtn.addEventListener("click", () => {
   balanceContainer.style.display = "none";
 })
 
-let mainBalance = 9712.23;
+let mainBalance = 5845.76;
 
 balance.textContent = mainBalance;
 
@@ -125,7 +125,7 @@ btnTwo.addEventListener('click', () => {
 
   setTimeout(() => {
     waitingTwo.style.display = "none";
-    mainBalance -= Number(stakeAmountTwo.value);
+    mainBalance -= Math.round(Number(stakeAmountTwo.value));
     mainBalance = mainBalance.toFixed(2);
     balance.textContent = mainBalance;
 
@@ -141,8 +141,8 @@ btnTwo.addEventListener('click', () => {
         btnTwo.style.display = "flex";
         btnProgressTwo.style.display = "none";
         const cashout = btnAmountTwo.textContent;
-        const newBalance = Numaber(mainBalance) + Number(cashout);
-        balance.textContent = newBalance;
+        const newBalance = Number(mainBalance) + Number(cashout);
+        balance.textContent = newBalance.toFixed(2);
         clearInterval(cashoutTime);
         handleOneTwo.classList.remove("handle_1_two");
         displayAlertTwo(cashout);
