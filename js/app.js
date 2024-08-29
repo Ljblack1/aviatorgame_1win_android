@@ -54,7 +54,7 @@ balance.addEventListener("click", () => {
   balanceContainer.style.display = "flex";
 })
 
-const mainCurrency = "ZAR";
+const mainCurrency = "ETB";
 
 document.addEventListener("DOMContentLoaded", () => {
   currencys.forEach((currency) => {
@@ -70,7 +70,7 @@ balanceBtn.addEventListener("click", () => {
   balanceContainer.style.display = "none";
 })
 
-let mainBalance = 24633.15;
+let mainBalance = 28646.75;
 
 balance.textContent = mainBalance;
 
