@@ -216,7 +216,7 @@ p {
 .logo {
   width: 7rem;
   height: 3rem;
-  background: url("https://aviator-next.spribegaming.com/aviator-logo.cafbd29233306bf7.svg") no-repeat center center/contain;
+  background: url("https://aviator-next.spribegaming.com/aviator-logo.c6b742d995765be3.svg") no-repeat center center/contain;
 }
 
 /* .logo::after {
@@ -311,7 +311,7 @@ p {
   border: none;
   width: 20px;
   height: 20px;
-  background: url(https://aviator-next.spribegaming.com/chat.b016cf6877c43f2e.svg) no-repeat center center;
+  background: url("https://aviator-next.spribegaming.com/chat.0b0f791b80419a8c.svg") no-repeat center center;
   display: none;
 }
 
