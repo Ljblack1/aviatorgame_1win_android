@@ -33,8 +33,8 @@ const balanceContainer = document.querySelector('.change_balance_container');
 const balanceInputField = document.querySelector('.change_balance_input_field');
 const balanceBtn = document.querySelector('.add_balance_btn');
 
-const totalUser= document.querySelector('.total_users');
-console.log(totalUser.innerHTML);
+// const totalUser= document.querySelector('.total_users');
+// console.log(totalUser.innerHTML);
 
 const amount = document.querySelector('.amount');
 
