@@ -474,6 +474,72 @@ padding: 2px 3px;
   height: 100%;
 }
 
+.b_play_stage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ongoingbet_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b1c1d;
+  padding: 0 17px;
+  margin: 0 8px;
+  transform: translateY(-5px);
+}
+
+.ongoingbet_top div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ongoingbet_top p {
+  width: 100%;
+  font-size: .7rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: #7B7B7B;
+  
+}
+
+.wg {
+  text-align: end;
+}
+
+.x {
+  width: 100%;
+  text-align: end;
+  margin-right: 5px;
+}
+
+.b_g {
+  text-align: end;
+  margin-right: 3px;
+}
+
+.ongoingbet {
+  width: 100%;
+transform: scale(1.013) translateY(-5px);
+}
+
+.b_currency {
+  position: absolute;
+  right: 24px;
+  bottom: 9px;
+}
+
+.b_currency p {
+  font-size: .73rem;
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: #141516;
+  color: #7b7b7b;
+}
 /* .game_play_stage img {
   width: 100%;
   height: 100%;
@@ -483,6 +549,13 @@ padding: 2px 3px;
   width: 100%;
   height: 100%;
   transform: scaleX(1.02);
+  padding: 0 .25rem;
+}
+
+.b_video {
+  width: 100%;
+  height: 100%;
+  /* transform: scaleX(1.03); */
   padding: 0 .25rem;
 }
 

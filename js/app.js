@@ -33,8 +33,8 @@ const balanceContainer = document.querySelector('.change_balance_container');
 const balanceInputField = document.querySelector('.change_balance_input_field');
 const balanceBtn = document.querySelector('.add_balance_btn');
 
-const totalUser= document.querySelector('.total_users');
-console.log(totalUser.innerHTML);
+// const totalUser= document.querySelector('.total_users');
+// console.log(totalUser.innerHTML);
 
 const amount = document.querySelector('.amount');
 
@@ -70,7 +70,7 @@ balanceBtn.addEventListener("click", () => {
   balanceContainer.style.display = "none";
 })
 
-let mainBalance = 66534.71;
+let mainBalance = 58987.11;
 
 balance.textContent = mainBalance;
 
@@ -89,7 +89,6 @@ btn.addEventListener('click', () => {
     balance.textContent = mainBalance;
     const users = Math.floor(Math.random() * (6000 - 4000 + 1)) + 4000;
 
-    totalUser.innerHTML = users;
     
     setTimeout(() => {
       cancelContainer.style.display = "none";
