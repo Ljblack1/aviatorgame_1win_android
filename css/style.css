@@ -529,7 +529,7 @@ transform: scale(1.013) translateY(-5px);
 .b_currency {
   position: absolute;
   right: 19px;
-  bottom: 1px;
+  bottom: -2px;
 }
 
 .b_currency p {
