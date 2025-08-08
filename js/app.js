@@ -54,7 +54,7 @@ balance.addEventListener("click", () => {
   balanceContainer.style.display = "flex";
 })
 
-const mainCurrency = "GHS";
+const mainCurrency = "UGX";
 
 document.addEventListener("DOMContentLoaded", () => {
   currencys.forEach((currency) => {
@@ -70,7 +70,7 @@ balanceBtn.addEventListener("click", () => {
   balanceContainer.style.display = "none";
 })
 
-let mainBalance = 2859.31;
+let mainBalance = 2992841.66;
 
 balance.textContent = mainBalance;
 
@@ -535,4 +535,3 @@ function displayAlertTwo(cashout) {
 function setBackToDefault() {
   btnAmount.textContent = 0;
 }
-
