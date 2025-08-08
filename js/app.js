@@ -70,7 +70,7 @@ balanceBtn.addEventListener("click", () => {
   balanceContainer.style.display = "none";
 })
 
-let mainBalance = 2992841.66;
+let mainBalance = 129284.66;
 
 balance.textContent = mainBalance;
 
@@ -535,3 +535,4 @@ function displayAlertTwo(cashout) {
 function setBackToDefault() {
   btnAmount.textContent = 0;
 }
+
