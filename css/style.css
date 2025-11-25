@@ -528,12 +528,12 @@ transform: scale(1.013) translateY(-5px);
 
 .b_currency {
   position: absolute;
-  right: 13px;
-  bottom: 1px;
+  right: 20px;
+  bottom: 2px;
 }
 
 .b_currency p {
-  font-size: .62rem;
+  font-size: .65rem;
   padding-left: 5px;
   padding-top: 2px;
   padding-bottom: 1px;
