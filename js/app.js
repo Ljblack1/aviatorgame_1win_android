@@ -70,7 +70,7 @@ balanceBtn.addEventListener("click", () => {
   balanceContainer.style.display = "none";
 })
 
-let mainBalance = 38561.37;
+let mainBalance = 1656.87;
 
 balance.textContent = mainBalance;
 
